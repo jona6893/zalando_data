@@ -1,0 +1,59 @@
+img{
+  width: 100%;
+}
+
+#container {
+  margin-top: 10px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+  gap: 20px;
+}
+
+article {
+  background-color: antiquewhite;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+.brandsort {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 150px;
+  height: 50px;
+  background-color: indianred;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.dropmenu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  max-height: 600px;
+  overflow: scroll;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+nav {
+  position: relative;
+  display: inline-block;
+}
+
+nav h3 {
+    background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+nav:hover .dropmenu {
+  display: block;
+}
